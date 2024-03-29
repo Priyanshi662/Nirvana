@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #2980b9;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.navbar {
+  position: fixed !important;
+  background-color: lightgoldenrodyellow;
+}
+.leftSection{
+  position: relative;
+  bottom: 65%;
+}
+.rightSection{
+  position: relative;
+  bottom: 62%;
+}
+.home {
+  background-color: transparent !important;
+}
+
+.menu-button {
+  display: none;
+  width: 30%;
+  height: 2rem;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .menu-button {
+    display: flex;
+    width: 60%;
+  }
+}
+
+@media (max-width: 442px) {
+  .menu-button {
+    display: flex;
+    width: 40%;
+  }
+}
+
+@media (max-width: 300px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.dropdown-sub-element {
+  position: relative;
+  display: inline-block;
+  transform: translateX(-70%);
+  padding-top: 1rem!important;
+}
+
+.media-scroller {
+  width: 90%;
+  display: grid;
+  gap: 10px;
+  padding: 10px 0;
+  grid-auto-flow: column;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+/* changing scrollbar style */
+*::-webkit-scrollbar {
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(151, 149, 149);
+  border-radius: 20px;
+  border: 3px solid rgba(175, 166, 166, 0);
+}
+
+/* Rest of the CSS code */
+#about {
+  display: justift;
+  flex-direction: column; /* Change to column to place content below the image */
+  justify-content: center;
+  align-items: center; /* Center content horizontally and vertically */
+  background-color: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 35px auto;
+  width: 90%; /* Increase the width for a larger box */
+  height: auto; /* Let the height adjust to content */
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.464);
+  box-sizing: border-box;
+  border: 0px solid #e5e7eb;
+  transition: transform 1s; /* Increase scale duration */
+  padding: 20px; /* Add padding for spacing */
+}
+
+
+
+#about p {
+  max-height: 0;
+  transition: max-height 0.7s ease, opacity 0.7s ease, margin-top 0.7s ease;
+  margin-top: 15px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  text-align: justify;
+  font-size: 16px;
+}
+
+#about:hover {
+  transform: scale(0.95); /* Increase scale duration */
+}
+
+#about span {
+  width: 100%;
+  position: relative;
+  top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#about h2 {
+  text-align: center;
+  color: #4f46e5;
+  font-size: 18px;
+}
+
+#carouselExampleControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-section {
+  margin: 0;
+  padding: 0;
+  height: 20rem; /* Set a fixed height for all images */
+  width: 100%; /* Maintain aspect ratio */
+  overflow: hidden; /* Hide overflow to maintain box size */
+}
+
+.img-section img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease; /* Increase transition duration */
+}
+
+
+/* dark carousel control icons */
+/* Increase the width and adjust the placement of arrow buttons */
+/* Add space between the arrow buttons */
+.carousel-control-prev {
+  font-size: 3rem;
+  filter: invert(100%);
+  width: 4rem;
+  height: 4rem;
+  margin-top: -2rem;
+  margin-right: 1rem; /* Adjust the right margin as needed */
+}
+
+.carousel-control-next {
+  font-size: 3rem;
+  filter: invert(100%);
+  width: 4rem;
+  height: 4rem;
+  margin-top: -2rem;
+  margin-left: 1rem; /* Adjust the left margin as needed */
+}
+
+
+.navbar-logo img {
+  width: 60px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+}
+
+@media (max-width: 620px) {
+  .media-scroller {
+    grid-auto-columns: 100%;
+  }
+
+  #about {
+    width: 65%;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  #about {
+    flex-direction: column;
+    height: 810px;
+  }
+
+  #about section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .img-section {
+    margin: 0;
+    padding: 0;
+    height: 12rem;
+  }
+
+  .img-section img {
+    width: 100%; /* Set to 100% to maintain aspect ratio */
+    object-fit: cover;
+  }
+}
+
+.customFooter a {
+  color: rgb(203 213 225);
+}
+
+.customFooter a:hover {
+  text-decoration: none;
+}

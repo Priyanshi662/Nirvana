@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #2980b9;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+p {
+  color: rgb(0, 0, 0);
+}
+
+ol {
+  color: rgb(0, 0, 0);
+}
+
+
+
+/* Google Translate */
+#google_translate_element select {
+  background-color: #f6edfd;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+.pomodoro-timer {
+  display: flex;
+  margin: 2rem;
+  align-items: center;
+  justify-content: center;
+} 
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10px;
+  color: black;
+  height: 3.5rem;
+  font-weight: bold;
+}
+
+.time-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.inline-text {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inline-image {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.pomodoro-text {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.pomodoro-text h4{
+  font-size: 1.5rem!important;
+}
+
+.pomodoro-text ol{
+  font-size: 1.3rem;
+}
+
+.pomodoro-text h2{
+  font-size: 1.5rem!important;
+}
+
+button {
+  font-size: 16px;
+  background-color: #023e8a;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.start,.reset{
+  border-radius: 0.2cm;
+  font-size: 1.4rem;
+  background-color: #023e8a;
+  color: white;
+  padding: 10px 30px;
+  font-weight: bold;
+}
+
+.start::after,
+.reset::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to right, #03045e, transparent);
+  transition: width 0.3s;
+}
+
+.start:hover::after,
+.reset:hover::after {
+  width: 100%;
+}
+p a button {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #2980b9;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin: 5px;
+  margin-right: 10;
+  cursor: pointer;
+}
+
+div p a {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  color: rgb(81, 31, 31);
+  border: none;
+  border-radius: 5px;
+  margin: 5px 8px;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  height: 2rem;
+}
+
+.list-paragraph {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.4rem;
+}
+
+button:hover {
+  background: #3382F1;
+  color: black;
+}
+
+.navbar-logo img {
+  width: 60px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* footer img {
+  width: 128px;
+  border-radius: 50%;
+} */
+.pomodoro{
+  font-family: cursive;
+  font-size: 2rem;
+}
+.pomodoro_container{
+  margin: 2rem;
+  background-color: #faedcd;
+  border-radius: 0.4cm;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.pomodoro_container p{
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: -200px;
+}
+
+
+.header {
+  background-color: #2980b9;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+}
+
+.header h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.header p {
+  font-size: 24px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.content {
+  margin: 50px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #2980b9;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content img {
+  background-color: antiquewhite;
+  margin-right: 20px;
+}
+
+
+
+.base-timer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-top: -30px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.container-header{
+  margin: 100px auto 100px auto; 
+  padding: 150px;
+}
+
+/* footer .logo {
+  border-radius: 50%;
+}
+
+footer img{
+  position: absolute;
+  left: 56rem;
+  height:7rem;
+  width: 7rem;
+}
+ */
+
