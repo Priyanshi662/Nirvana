@@ -4,28 +4,29 @@
       "image": "../Images/Govardhan.jpeg",
       "heading": "Govardhana Puja",
       "description": "Govardhana Puja is a festival celebrating the Govardhana lila of Lord Krishna. On this day, Go-Puja is also performed as part of the festival.",
-      "date": "Tue 14th November 2023",
+      "date": "Tue 2nd November 2024",
       "btnText": "Book Tickets",
       "link": "https://www.iskconbangalore.org/govardhana-puja/",
       "state": "Bangalore"
     },
     {
       "id": 2,
-      "image": "../Images/padmini.jpeg",
-      "heading": "Padmini Ekadashi",
-      "description": "The date of Padmini Ekadashi also comes only once every three years.",
-      "date": "Sat 29th July 2023",
+      "image": "../Images/rama-navmi.jpg",
+      "heading": "Rama Navami",
+      "description": "Sri Ramachandra appeared in the month of Chaitra , on the ninth day of the growing moon and this particular day is celebrated as Sri Rama Navami every year.",
+      "date": "Sat 17 Apr 2024",
       "btnText": "Book Tickets",
+      "link":"https://www.iskconbangalore.org/sri-rama-navami/",
       "state": "Bangalore"
     },
     {
       "id": 3,
-      "image": "../Images/krishna_iskcon.jpeg",
-      "heading": "Sri Krishna Janmashtami",
-      "description": "Sri Krishna Janmashtami (August 19, 2022) is the most important festival to celebrate the birth of Lord Krishna.",
-      "date": "Sun 6th September 2023",
+      "image": "../Images/akshaya-tritiya.jpg",
+      "heading": "Akshaya Tritiya",
+      "description": "Akshaya Tritiya occurs on the third day (Tritiya) of the bright fortnight (Shukla Paksha) in the month of Vaishakha every year.",
+      "date": "Fri 10 May 2024",
       "btnText": "Book Tickets",
-      "link": "https://www.iskconbangalore.org/sri-krishna-janmashtami/",
+      "link": "https://www.iskconbangalore.org/akshaya-tritiya/",
       "state": "Mumbai"
     },
     {
@@ -33,7 +34,7 @@
       "image": "../Images/Jhulan.jpeg",
       "heading": "Jhulan Utsava",
       "description": "Jhulan utsava is celebrated for five days in the month of Shravana. Deities of Radha and Krishna are gently swayed on the swing.",
-      "date": "Sun 27th August 2023",
+      "date": "Sun 16th Aug 2024",
       "btnText": "Book Tickets",
       "link": "https://www.iskconbangalore.org/jhulan-utsava/",
       "state": "Vellore"
